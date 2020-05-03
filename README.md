@@ -8,7 +8,7 @@ Yagpo Tibetan Unicode font suitable for PDF composing. If PDF is open by Adobe A
 
 All no-tibetan characters included from Linux Libertine open source font by their GPL and OFL license.
 
-Main purpose of this font development project it is provide free public access for tibetan texts publishing, study and distribution.
+Main purpose of this font development project it is provide free public access for tibetan texts publishing, study and distribution. Font released under SIL Open Font License v1.1
 
 Last build version you can download here: http://www.buddism.ru/YagpoFont/
 
