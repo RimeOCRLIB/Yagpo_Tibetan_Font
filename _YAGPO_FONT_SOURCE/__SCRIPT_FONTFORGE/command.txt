@@ -1,0 +1,1 @@
+php -c /private/etc/php_command.ini    /Volumes/WORK_DHARMA_3TB/SAMSUNG/MainYagpoOCR/Font/__SCRIPT_FONTFORGE/@liga_glyph.php 

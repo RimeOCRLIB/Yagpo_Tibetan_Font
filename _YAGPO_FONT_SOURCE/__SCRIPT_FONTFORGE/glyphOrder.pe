@@ -1,0 +1,240 @@
+
+list=["ka","kha","ga","g.ha","nga","ca","cha","ja","nya","Ta","Tha","Da","Na","ta","tha","da","d.ha","na","pa","pha","ba","b.ha","ma","tsa","tsha","dza","dz.ha","wa","zha","za","achung","ya","ra","la","sha","Sha","sa","ha","aa","Ra","gter_yig"];
+
+i=0;
+f=0xe380;
+
+while(i<SizeOf(list))
+	Select(list[i]);
+	SetUnicodeValue(f,0);
+	f++;
+	i++;
+endloop;
+
+list=["yatag","yatag1","ratag","ratag1","ratag_","ratag_1","vasur","vasur1","_xa","ra_short","halanta"];
+
+i=0;
+f=0xe3ce;
+
+while(i<SizeOf(list))
+	Select(list[i]);
+	SetUnicodeValue(f,0);
+	f++;
+	i++;
+endloop;
+
+list=["ka1","ga1","Ta1","Da1","Na1","da1","na1","zha1","ha1","nya1","ta1"];
+
+i=0;
+f=0xe402;
+
+while(i<SizeOf(list))
+	Select(list[i]);
+	SetUnicodeValue(f,0);
+	f++;
+	i++;
+endloop;
+
+list=["ka","kha","ga","nga","ca","cha","ja","nya","Ta","Tha","Da","Na","ta","tha","da","na","pa","pha","ba","ma","tsa","tsha","dza","wa","zha","za","a.chung","ya","ra","la","sha","Sha","sa","ha","aa","Ra","vasur","yatag","ratag","short_ra"];
+
+i=0;
+f=0xe046;
+
+while(i<SizeOf(list))
+	name="c0."+list[i];
+	if(!InFont(name))
+		Select(f);
+		SetGlyphName(name);
+		Select(list[i]);
+		CopyReference();
+		Select(f);
+		Paste();
+		SetUnicodeValue(f,0);
+	else
+		Select(name);
+		SetUnicodeValue(f,0);
+	endif;	
+	f++;
+	i++;
+endloop;
+
+
+i=0;
+f=0xe081;
+
+while(i<SizeOf(list))
+	name="c1."+list[i];
+	if(!InFont(name))
+		Select(f);
+		SetGlyphName(name);
+		Select(list[i]);
+		CopyReference();
+		Select(f);
+		Paste();
+		SetUnicodeValue(f,0);
+	else
+		Select(name);
+		SetUnicodeValue(f,0);
+	endif;	
+	f++;
+	i++;
+endloop;
+
+i=0;
+f=0xe0ce;
+
+while(i<SizeOf(list))
+	name="c2."+list[i];
+	if(!InFont(name))
+		Select(f);
+		SetGlyphName(name);
+		Select(list[i]);
+		CopyReference();
+		Select(f);
+		Paste();
+		SetUnicodeValue(f,0);
+	else
+		Select(name);
+		SetUnicodeValue(f,0);
+	endif;	
+	f++;
+	i++;
+endloop;
+
+i=0;
+f=0xe119;
+
+while(i<SizeOf(list))
+	name="c3."+list[i];
+	if(!InFont(name))
+		Select(f);
+		SetGlyphName(name);
+		Select(list[i]);
+		CopyReference();
+		Select(f);
+		Paste();
+		SetUnicodeValue(f,0);
+	else
+		Select(name);
+		SetUnicodeValue(f,0);
+	endif;	
+	f++;
+	i++;
+endloop;
+
+list=["kra","gra","dra","bra","nra","shra","hra","tra","pra","dzra"];
+
+i=0;
+f=0xe213;
+
+while(i<SizeOf(list))
+	name="c1."+list[i];
+	if(!InFont(name))
+		Select(f);
+		SetGlyphName(name);
+		Select(list[i]);
+		CopyReference();
+		Select(f);
+		Paste();
+		SetUnicodeValue(f,0);
+	else
+		Select(name);
+		SetUnicodeValue(f,0);
+	endif;	
+	f++;
+	i++;
+endloop;
+
+
+
+list=["kya","gya","hya","tya"];
+
+i=0;
+f=0xe1af;
+
+while(i<SizeOf(list))
+	name="c0."+list[i];
+	if(!InFont(name))
+		Select(f);
+		SetGlyphName(name);
+		Select(list[i]);
+		CopyReference();
+		Select(f);
+		Paste();
+		SetUnicodeValue(f,0);
+	else
+		Select(name);
+		SetUnicodeValue(f,0);
+	endif;	
+	f++;
+	i++;
+endloop;
+
+i=0;
+f=0xe1c8;
+
+while(i<SizeOf(list))
+	name="c1."+list[i];
+	if(!InFont(name))
+		Select(f);
+		SetGlyphName(name);
+		Select(list[i]);
+		CopyReference();
+		Select(f);
+		Paste();
+		SetUnicodeValue(f,0);
+	else
+		Select(name);
+		SetUnicodeValue(f,0);
+	endif;	
+	f++;
+	i++;
+endloop;
+
+
+list=["rdo_rje"];
+
+i=0;
+f=0xe1Af;
+
+while(i<SizeOf(list))
+	Select(list[i]);
+	SetUnicodeValue(f,0);
+	f++;
+	i++;
+endloop;
+
+
+list=["_i","_i1","_e","_o","_u","_u2","_u3","_u4","_u5","_u6","_u7","_iM1","__i1","_MM","_ai","_ai1","_oM","_naa_da","__iMM","_M","_au","_iM","_eM","__iM","__i","_U","_A"];
+
+i=0;
+f=0xe2A9;
+
+while(i<SizeOf(list))
+	Select(list[i]);
+	SetUnicodeValue(f,0);
+	f++;
+	i++;
+endloop;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,38 @@
+#get font namelist
+
+log="/Volumes/WORK_DHARMA_3TB/SAMSUNG/MainYagpoOCR/Font/__SCRIPT_FONTFORGE/_namelist.txt"
+WriteStringToFile(" \n",log,0);
+
+f=0x3301;
+
+
+while(f<0x5962)
+	Select(f);
+	name=GlyphInfo("Name");
+	if(InFont(name))
+		WriteStringToFile(ToString(f)+"   "+name+" \n",log,1);
+	endif;	
+	f++;
+endloop;
+
+
+f=0xf2ff;
+while(f<0xf900)
+	Select(f);
+	name=GlyphInfo("Name");
+	if(InFont(name))
+		WriteStringToFile(ToString(f)+"   "+name+" \n",log,1);
+	endif;	
+	f++;
+endloop;
+
+
+f=0xe43a;
+while(f<0xe4cf)
+	Select(f);
+	name=GlyphInfo("Name");
+	if(InFont(name))
+		WriteStringToFile(ToString(f)+"   "+name+" \n",log,1);
+	endif;	
+	f++;
+endloop;

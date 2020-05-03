@@ -1,0 +1,25 @@
+#get all anchor points from Open Type letters elements to file
+
+log="/Volumes/WORK_DHARMA_3TB/SAMSUNG/MainYagpoOCR/Font/__SCRIPT_FONTFORGE/_anchorList.txt"
+WriteStringToFile(" \n",log,0);
+
+
+f=0xdff0;
+
+while(f<0xe916)
+
+	Select(f);
+	anchorList=GetAnchorPoints();
+	name=GlyphInfo("Name");
+
+	if(SizeOf(anchorList)>0)
+		n=0;
+		while(n<SizeOf(anchorList))
+			WriteStringToFile(name+"   "+anchorList[n][0]+"   "+ToString(anchorList[n][2])+"   "+ToString(anchorList[n][3])+" \n",log,1);	
+			n++;
+		endloop;
+
+	endif;	
+	f++;
+		
+endloop;
